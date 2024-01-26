@@ -1,0 +1,87 @@
+:root {
+    --color-primary: rgba(0, 50, 0, 0.1);
+    --color-primary-dark: #00190080;
+    --color-secondary: rgba(135, 135, 135, 0.6);
+    --color-error: rgba(74, 2, 2, 0.9);
+    --color-success: rgba(146, 107, 107, 0.9);
+    --border-radius: 5px;
+    --bg-color-primary: rgba(rgb(2, 158, 2, .1));
+    --bg-color-primary-dark: rgba(rgb(6, 9, 6));
+    --input-regular-border: 1px solid rgba(120, 120, 120, .3);
+}
+body {
+    background: linear-gradient(to right, var(--color-primary-dark), var(--color-primary)), url(image.jfif);
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    line-height: 75%;
+}
+.container {
+    background-color: rgba(245, 245, 245);
+    width: 100%;
+    height: 100%;
+    max-width: 375px;
+    max-height: 275px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 25px rgb(236, 85, 85);
+    border-radius: var(--border-radius);
+    padding: 4rem;
+    outline: none;
+}
+.form-tittle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-input-group {
+    background-color: rgba(120, 120, 120, 0.1);
+    width: 100%;
+    height: 36px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: var(--input-regular-border);
+    outline: none;
+}
+.form-input-group:focus {
+    border-color: var(--bg-color-primary-dark);
+    background-color: #ffffff;
+}
+.form-input-error-message {
+    margin-top: 1rem;
+    font: .75rem;
+    color: var(--color-error);
+}
+.form-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    color: rgba(242, 245, 242, 0.9);
+    background-color: rgba(36, 69, 36, 0.6);
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.form-button:hover {
+    background-color: rgba(9, 36, 9, 0.9);
+}
+.form-button:active {
+    transform: scale(.9);
+}
+.form-text {
+    text-align: center;
+    margin: 1rem;
+}
+.form-link {
+    text-decoration: none;
+}
+.form :first-child {
+    margin-top: 0;
+}
+.form :last-child {
+    margin-bottom: 0;
+}
